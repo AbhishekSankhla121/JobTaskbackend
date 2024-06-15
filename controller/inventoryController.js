@@ -67,7 +67,7 @@ export const getData = async (req, res, next) => {
         }
 
 
-
+  infoGraphSatsticalData.sort((a, b) => new Date(a.timestamp[0]) - new Date(b.timestamp[0]));
         res.status(200).json({
             newConditionUnits,
             usedConditionUnits,
