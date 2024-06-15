@@ -39,7 +39,7 @@ export const getData = async (req, res, next) => {
             sum: 0
         };
 
-        for (let i = 0; infoGraphSatsticalData.length < 13; i++) {
+        for (let i = 0;  i < infoGraph.length && infoGraphSatsticalData.length < 13; i++) {
             const currentItem = infoGraph[i];
             const currentDate = currentItem.timestamp.toISOString().split("T")[0];
             const currentPrice = parseFloat(currentItem.price.split(" ")[0]);
