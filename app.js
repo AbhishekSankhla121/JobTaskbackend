@@ -10,7 +10,7 @@ config({
 
 // to check port is working or not start here
 app.get("/", (req, res, next) => {
-    res.status(200).send(`<h1>port working please check frontend: ${process.env.FRONTEND_URL}</h1>`);
+    res.status(200).send(`<h1>port working please check frontend:<a href=${process.env.FRONTEND_URL} > click here </a></h1>`);
 });
 // to check port is working or not end here
 
